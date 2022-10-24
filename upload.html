@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Upload</title>
+    </head>
+    <body>
+        <nav class="container navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="Upload.html">
+            <img src="image/SharedScreenshot.jpg">
+            </a>
+        
+        
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="Upload.html">Upload <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="search.html">Search</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="elham1.php">Display keys</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link " href="size.html">Memory Cache</a>
+                </li>
+            </ul>
+        
+            </div>
+        </nav>
+        <!--Nav Bar End -->
+        <section class="background">
+            <div class="form">
+                <div class="section" style="height: 94vh;">
+                    <img src="image/Cloud.jpg" class="img-fluid" alt="">
+                    <div class="container mx-auto">
+                      <p class="welcomeupload"> Please Enter your image and Key
+                      </p>
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <label>Select Image File:</label>
+                    <input type="file" id="image-upload" name="image" >
+                    <label for="#Key" class="keyupload"> Key : </label>
+                    <input type="number" min="0" required  id="key" name="Key" style="margin-left:4vh ; ">
+                    <input type="submit" name="submit" value="Upload" >
+                </form>
+                <button id="remove" >remove</button>
+            </div>
+        </section>
+    
+        
+        <script>
+            document.querySelector("#image-upload").addEventListener("change", function(){
+                const reader = new FileReader();
+
+                reader.addEventListener("load", () => {
+                    // to print on console
+                    // console.log (reader.result);
+                    localStorage.setItem("recent-image", reader.result);
+                    
+                });
+
+                reader.readAsDataURL(this.files[0]);
+
+            });
+            // remove element recent-image on cache
+            document.getElementById("remove").addEventListener("click", function() {
+                 localStorage.removeItem('recent-image')
+                 alert("Done Job");
+                });
+
+          
+        </script>
+      
+        
+    </body>
+</html>

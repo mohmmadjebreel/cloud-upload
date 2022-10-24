@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    
+}
+body
+{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    /* font-weight: 400; */
+  
+    margin: 0px;
+    padding: 0px;
+} 
+section.background{
+    background-image: url(/css/Cloud.jpg) !important;
+}
+.result-container{
+    background-color: #ffffff44;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+}
+
+.result-container img{
+    width: 49% !important;
+    height: auto !important;
+    display: inline-block;
+    padding: 2%;
+}
+.navbar {
+    background-color: #000020;
+    color: white !important;
+    width: 100%;
+}
+
+input ,button{
+    width: 200px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+input[type="submit"],button{
+    border: none;
+    box-shadow: gray 0px 0px  10px ;
+    cursor: pointer;
+}
+input[type="file"]{
+    width: 300px;
+    cursor: pointer;
+}
+
+.navbar-brand{
+    color: white;
+}
+.navbar button {
+    color: white;
+}
+.navbar .nav-item a{
+    color: white !important;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    padding-left: 0;
+    margin-bottom: 0;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+div#navbarSupportedContent {
+    margin-top: -41px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+ul.navbar-nav.mr-auto {
+    margin-left: 35px;
+    font-weight: 600;
+    /* padding-left: 47px; */
+  
+}
+/* 
+.fa-2x {
+    font-size: 2em;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+form {
+    display: flex;
+    gap: 54px;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-left: 17px;
+    margin-top: 7px;
+}
+
+
+div#navbarSupportedContent ul :hover {
+    background-color: #313946;
+    border-radius: 5px;
+}
+
+
+.section img {
+     width: 100%; 
+    height: 100%;
+    position: relative;
+    
+}
+ .section .container{
+     position: absolute;
+     top: 30vh;
+     left: 20vh;
+     color: white;
+     text-decoration: none;
+ } 
+
+
+
+
+
+ input[type="submit"] {
+    margin-top: 10px;
+    margin-left: 111px;
+    cursor: pointer;
+    /* padding: 6px; */
+    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-left: 19px;
+    padding-right: 19px;
+    font-weight: 700;
+    background-color: #99c4ff;
+    border-radius: 5px;
+    width: auto;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #003346;
+    color: aliceblue;
+}
+
+
+/*input#Image {
+    height: 187px;
+    margin-top: 15px;
+    margin-left: 19px;
+    width: 327px;
+}
+
+
+/* div#OutputValue{
+
+    height: 187px;
+    margin-top: 15px;
+    margin-left: 19px;
+    width: 327px;
+
+} */
+
+
+.welcomeupload {
+    margin-top: 40px;
+    margin-bottom: 51px;
+    font-size: larger;
+    font-weight: 500;
+    margin-left: 14px;
+}
+
+
+.container.mx-auto {
+    margin-top: -30px;
+}
+
+.keyupload{
+    margin-left: -56px;
+}
+
+
+button.btn.btn-primary:hover {
+    background-color: #003346;
+    color: aliceblue;
+}
+
+button.btn.btn-primary {
+    margin-top: 3px;
+
+    margin-left: 111px;
+    cursor: pointer;
+    /* padding: 6px; */
+    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-left: 19px;
+    padding-right: 19px;
+    font-weight: 700;
+    background-color: #99c4ff;
+    border-radius: 5px;
+    /* width: auto; */
+}
